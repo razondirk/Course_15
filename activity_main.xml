@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.razon.course15.MainActivity">
+
+    <TextView
+        android:id="@+id/questionTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/alert_dark_frame"
+        android:maxHeight="200dp"
+        android:minHeight="200dp"
+        android:text="Question Text"
+        android:textAlignment="center"
+        android:textColor="@color/background_material_light"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/answerATextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/alert_dark_frame"
+        android:maxHeight="180dp"
+        android:minHeight="180dp"
+        android:text="Answer A"
+        android:textAlignment="center"
+        android:textColor="@color/background_material_light"
+        android:textSize="12dp"
+        android:enabled="true"
+        android:layout_below="@+id/questionTextBox"
+        android:layout_alignParentStart="true"
+        android:onClick="answerAClicked" />
+
+    <TextView
+        android:id="@+id/answerBTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/answerATextBox"
+        android:background="@android:drawable/alert_dark_frame"
+        android:maxHeight="180dp"
+        android:minHeight="180dp"
+        android:text="Answer B"
+        android:textAlignment="center"
+        android:textColor="@color/background_material_light"
+        android:textSize="12dp"
+        android:enabled="true"
+        android:onClick="answerBClicked" />
+
+    <TextView
+        android:id="@+id/answerCTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/answerBTextBox"
+        android:background="@android:drawable/alert_dark_frame"
+        android:maxHeight="180dp"
+        android:minHeight="180dp"
+        android:singleLine="false"
+        android:text="Answer C"
+        android:textAlignment="center"
+        android:textColor="@color/background_material_light"
+        android:textSize="12dp"
+        android:enabled="true"
+        android:onClick="answerCClicked" />
+
+    <TextView
+        android:id="@+id/answerDTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/answerCTextBox"
+        android:background="@android:drawable/alert_dark_frame"
+        android:maxHeight="180dp"
+        android:minHeight="180dp"
+        android:singleLine="false"
+        android:text="Answer D"
+        android:textAlignment="center"
+        android:textColor="@color/background_material_light"
+        android:textSize="12dp"
+        android:enabled="true"
+        android:onClick="answerDClicked" />
+
+</RelativeLayout>
